@@ -1,0 +1,2 @@
+# advance_SQL_2023
+PRÁCTICA ADVANCED SQL
