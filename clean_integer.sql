@@ -6,8 +6,6 @@ AS (
     IF(input IS NULL, -999999, input)
 );
 
---Pruebas
-SELECT keepcoding.clean_integer(12);
-SELECT keepcoding.clean_integer(null);
-SELECT keepcoding.clean_integer(NULL);
-
+--Prueba
+SELECT keepcoding.clean_integer(CAST(summary.billing_account_id AS INT64)) AS cleaned_billing_account_id
+FROM keepcoding.ivr_summary summary;
